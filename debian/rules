@@ -21,7 +21,7 @@ override_dh_auto_configure:
 		--runstatedir=/run \
 		--with-pppd-plugin-dir=$(PPPD_PLUGIN_DIR) \
 		--with-pppd=/usr/sbin/pppd \
-		--with-resolvconf=/sbin/resolvconf \
+		--with-resolvconf=no \
 		--with-dhclient=/sbin/dhclient \
 		--with-iptables=/sbin/iptables \
 		--with-dnsmasq=/usr/sbin/dnsmasq \
