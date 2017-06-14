@@ -68,6 +68,7 @@ Depends: ${shlibs:Depends},
 Recommends: ppp,
             iptables,
             modemmanager,
+            network-manager-pptp,
             crda,
             iputils-arping
 Suggests: avahi-autoipd
