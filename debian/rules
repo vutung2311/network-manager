@@ -80,7 +80,9 @@ override_dh_systemd_start:
 	dh_link -pnetwork-manager \
 		lib/systemd/system/NetworkManager.service \
 		lib/systemd/system/network-manager.service
-	dh_systemd_start -pnetwork-manager --no-also NetworkManager.service
+	dh_systemd_start -pnetwork-manager --no-start NetworkManager-dispatcher.service
+	dh_systemd_start -pnetwork-manager --no-start NetworkManager-wait-online.service
+	dh_systemd_start -pnetwork-manager --restart-after-upgrade NetworkManager.service
 
 override_dh_ppp:
 	dh_ppp --breaks
