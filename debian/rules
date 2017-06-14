@@ -35,6 +35,7 @@ override_dh_auto_configure:
 		--with-nmtui \
 		--with-nmcli \
 		--with-selinux \
+		--with-tests \
 		--with-libaudit \
 		--without-dhcpcanon \
 		--enable-polkit \
@@ -75,3 +76,8 @@ override_dh_systemd_start:
 
 override_dh_ppp:
 	dh_ppp --breaks
+
+override_dh_auto_test:
+ifeq (, $(filter nocheck, $(DEB_BUILD_OPTIONS)))
+	make check || ( find . -name test-suite.log -exec cat {} \;; exit 1; )
+endif
