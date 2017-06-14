@@ -1,7 +1,8 @@
 Source: network-manager
 Section: net
 Priority: optional
-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
 Uploaders: Michael Biebl <biebl@debian.org>,
  Sjoerd Simons <sjoerd@debian.org>,
  Aron Xu <aron@debian.org>
@@ -47,8 +48,8 @@ Build-Depends: debhelper (>= 10.3),
                dbus <!nocheck>,
                python-dbus <!nocheck>
 Standards-Version: 4.1.1
-Vcs-Git: https://anonscm.debian.org/git/pkg-utopia/network-manager.git
-Vcs-Browser: https://anonscm.debian.org/git/pkg-utopia/network-manager.git
+Vcs-Git: https://code.launchpad.net/~network-manager/network-manager/+git/ubuntu
+Vcs-Browser: https://git.launchpad.net/network-manager?h=artful
 Homepage: https://wiki.gnome.org/Projects/NetworkManager
 
 Package: network-manager
