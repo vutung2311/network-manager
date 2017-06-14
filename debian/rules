@@ -46,7 +46,7 @@ override_dh_auto_configure:
 		--enable-introspection \
 		--enable-gtk-doc \
 		--enable-concheck \
-		--enable-teamdctl \
+		--disable-teamdctl \
 		--enable-json-validation \
 		--enable-bluez5-dun \
 		--enable-vala \

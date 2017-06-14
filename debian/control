@@ -41,7 +41,7 @@ Build-Depends: debhelper (>= 10.3),
                libndp-dev,
                libreadline-dev,
                libnewt-dev (>= 0.52.15),
-               libteam-dev (>= 1.9),
+#               libteam-dev (>= 1.9),
                libjansson-dev,
                libbluetooth-dev (>= 5),
                valac (>= 0.17.1.24),
@@ -71,7 +71,6 @@ Recommends: ppp,
             crda,
             isc-dhcp-client (>= 4.1.1-P1-4),
             iputils-arping
-Suggests: libteam-utils
 Breaks: ${misc:Breaks}
 Description: network management framework (daemon and userspace tools)
  NetworkManager is a system network service that manages your network devices
@@ -88,9 +87,6 @@ Description: network management framework (daemon and userspace tools)
   * dnsmasq-base/iptables: Required for creating Ad-hoc connections and
     connection sharing.
     address configuration.
-  * libteam-utils: Network Team driver allows multiple network interfaces to be
-    teamed together and act like a single one. This process is called "ethernet
-    bonding", "channel teaming" or "link aggregation".
 
 Package: network-manager-dev
 Section: devel
