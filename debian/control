@@ -70,6 +70,7 @@ Recommends: ppp,
             crda,
             isc-dhcp-client (>= 4.1.1-P1-4),
             iputils-arping
+Suggests: avahi-autoipd
 Breaks: ${misc:Breaks}
 Description: network management framework (daemon and userspace tools)
  NetworkManager is a system network service that manages your network devices
@@ -82,6 +83,8 @@ Description: network management framework (daemon and userspace tools)
  interact with NetworkManager.
  .
  Optional dependencies:
+  * avahi-autoipd: Used for IPv4LL, a protocol for automatic Link-Local IP
+    address configuration.
   * ppp: Required for establishing dial-up connections (e.g. via GSM).
 
 Package: network-manager-dev
