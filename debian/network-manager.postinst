@@ -20,10 +20,6 @@ set -e
 
 case "$1" in
     configure)
-        # Create netdev group. Members of group netdev get access to the PolicyKit action
-        # org.freedesktop.NetworkManager.settings.modify.system without prior authentication
-        addgroup --quiet --system netdev
-
         NIF=/etc/network/interfaces
         if [ -z "$2" ] && [ -f $NIF ]; then
             ifaces=`grep -v '^#' $NIF | awk '/iface/ {print $2}' | sort -u | sed -e 's/lo//' -e '/^$/d' -e 's/^/- /'`
