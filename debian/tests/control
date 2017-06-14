@@ -1,0 +1,15 @@
+Tests: wpa-dhclient
+Depends: python3, hostapd, dnsmasq-base, wpasupplicant, isc-dhcp-client, iw
+Restrictions: needs-root allow-stderr isolation-machine
+
+Tests: nm
+Depends: python3, gir1.2-networkmanager-1.0, network-manager, hostapd, iw, python3-dbusmock
+Restrictions: needs-root isolation-machine
+
+Tests: killswitches-no-urfkill
+Depends: network-manager, build-essential, linux-headers-generic, rfkill
+Restrictions: needs-root allow-stderr isolation-machine
+
+Tests: urfkill-integration
+Depends: network-manager, build-essential, linux-headers-generic, rfkill, urfkill
+Restrictions: needs-root allow-stderr isolation-machine
