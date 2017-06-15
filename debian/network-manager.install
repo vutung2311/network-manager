@@ -28,3 +28,4 @@ debian/org.freedesktop.NetworkManager.pkla var/lib/polkit-1/localauthority/10-ve
 debian/10-*.conf usr/lib/NetworkManager/conf.d/
 debian/60-network-manager.rules usr/share/polkit-1/rules.d/
 debian/01-ifupdown etc/NetworkManager/dispatcher.d/
+debian/source_network-manager.py /usr/share/apport/package-hooks/
