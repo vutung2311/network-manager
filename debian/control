@@ -298,3 +298,21 @@ Description: NetworkManager configuration to enable connectivity checking
  No user data is transmitted in the connectivity checks, but merely contacting
  the Debian connectivity check servers reveals that the user is running a
  Debian(-based) operating system with NetworkManager.
+
+Package: network-manager-config-connectivity-ubuntu
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         network-manager (>= ${source:Version})
+Description: NetworkManager configuration to enable connectivity checking
+ This package contains a configuration file which enables NetworkManager's
+ connectivity checking functionality.
+ .
+ NetworkManager will try to connect to an Ubuntu server to determine the
+ connection status.
+ .
+ This is particularly useful for captive portal detection.
+ .
+ No user data is transmitted in the connectivity checks, but merely contacting
+ the Ubuntu connectivity check servers reveals that the user is running an
+ Ubuntu(-based) operating system with NetworkManager.
