@@ -9,7 +9,6 @@ Update-dnsmasq-parameters.patch
 Ignore-rmnet_usbX-devices.patch
 Ignore-p2p0-wifi-devices-from-android.patch
 Track-killswitch-change-signals-from-urfkill.patch
-Only-test-team-devices-if-we-built-support-for-them.patch
 Disable-general-with-expect.patch
 libnm-Check-self-still-NMManager-or-not.patch
 dns-manager-don-t-merge-split-DNS-search-domains.patch
