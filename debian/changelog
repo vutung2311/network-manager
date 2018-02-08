@@ -36,10 +36,10 @@ network-manager (1.10.4-1ubuntu1) UNRELEASED; urgency=medium
       + libnm-Check-self-still-NMManager-or-not.patch
       + dns-manager-don-t-merge-split-DNS-search-domains.patch
       + Read-system-connections-from-run.patch
-      + fix-resolved-detection.patch
   * Dropped patches applied in new release:
     - connectivity-allow-override.patch
     - nm1.10-connectivity-check-api.patch
+    - fix-resolved-detection.patch
   * Other dropped changes:
     - debian/control, debian/rules:
       + Disable team support since it's in universe (LP: #1392012)
