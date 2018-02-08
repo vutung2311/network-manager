@@ -144,6 +144,9 @@
 /* Define to path of iptables binary */
 #undef IPTABLES_PATH
 
+/* Define to path to the Jansson shared library */
+#undef JANSSON_SONAME
+
 /* Define to path of the kernel firmware directory */
 #undef KERNEL_FIRMWARE_DIR
 
@@ -340,6 +343,12 @@
 
 /* Define to 1 if on MINIX. */
 #undef _MINIX
+
+/* Define whether the compiler support gcc __auto_type */
+#undef _NM_CC_SUPPORT_AUTO_TYPE
+
+/* Define whether the compiler supports C11 _Generic() */
+#undef _NM_CC_SUPPORT_GENERIC
 
 /* Define to 2 if the system does not provide POSIX.1 features except with
    this defined. */
