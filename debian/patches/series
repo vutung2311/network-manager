@@ -6,9 +6,6 @@ Fix-iscsiadm-path.patch
 libnm-register-empty-NMClient-and-NetworkManager-when-loa.patch
 Provide-access-to-some-of-NM-s-interfaces-to-whoopsie.patch
 Update-dnsmasq-parameters.patch
-Ignore-rmnet_usbX-devices.patch
-Ignore-p2p0-wifi-devices-from-android.patch
-Track-killswitch-change-signals-from-urfkill.patch
 Disable-general-with-expect.patch
 libnm-Check-self-still-NMManager-or-not.patch
 dns-manager-don-t-merge-split-DNS-search-domains.patch

@@ -1,6 +1,6 @@
 network-manager (1.10.4-1ubuntu1) UNRELEASED; urgency=medium
 
-  * Merge with Debian. Remaining changes:
+  * Merge with Debian (LP: #1734586). Remaining changes:
     - Use systemd-resolved instead of dnsmasq
     - debian/control:
       + Depend on isc-dhcp-client instead of recommends
@@ -32,9 +32,6 @@ network-manager (1.10.4-1ubuntu1) UNRELEASED; urgency=medium
     - Add patches. See patch descriptions for more details:
       + Provide-access-to-some-of-NM-s-interfaces-to-whoopsie.patch
       + Update-dnsmasq-parameters.patch
-      + Ignore-rmnet_usbX-devices.patch
-      + Ignore-p2p0-wifi-devices-from-android.patch
-      + Track-killswitch-change-signals-from-urfkill.patch
       + Disable-general-with-expect.patch
       + libnm-Check-self-still-NMManager-or-not.patch
       + dns-manager-don-t-merge-split-DNS-search-domains.patch
@@ -46,6 +43,10 @@ network-manager (1.10.4-1ubuntu1) UNRELEASED; urgency=medium
   * Other dropped changes:
     - debian/control, debian/rules:
       + Disable team support since it's in universe (LP: #1392012)
+    - Obsolete Ubuntu Phone related patches:
+      + Ignore-p2p0-wifi-devices-from-android.patch
+      + Ignore-rmnet_usbX-devices.patch'
+      + Track-killswitch-change-signals-from-urfkill.patch
 
  -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 08 Feb 2018 17:54:22 -0500
 
