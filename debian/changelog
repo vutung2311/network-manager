@@ -36,6 +36,11 @@ network-manager (1.10.4-1ubuntu1) UNRELEASED; urgency=medium
       + libnm-Check-self-still-NMManager-or-not.patch
       + dns-manager-don-t-merge-split-DNS-search-domains.patch
       + Read-system-connections-from-run.patch
+  * Disable dns-manager-don-t-merge-split-DNS-search-domains.patch:
+    This patch needs to be updated for the new release but so far, no
+    one that understands the issue and patch have worked to update it.
+    After waiting for several weeks, we thought it was more important
+    to get this major version update into bionic now.
   * Dropped patches applied in new release:
     - connectivity-allow-override.patch
     - nm1.10-connectivity-check-api.patch
