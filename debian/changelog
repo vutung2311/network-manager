@@ -1,6 +1,11 @@
 network-manager (1.10.4-1ubuntu2) UNRELEASED; urgency=medium
 
+  [ Bryan Quigley ]
   * debian/tests/urfkill-integration - don't stop/start network manager
+
+  [ Jeremy Bicha ]
+  * Cherry-pick patch from 1.10 branch to fix double prompt for wifi password
+    on Kubuntu (LP: #1572244)
 
  -- Bryan Quigley <bryan.quigley@canonical.com>  Fri, 23 Feb 2018 13:52:48 -0500
 
