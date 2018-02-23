@@ -42,17 +42,12 @@ echo
 echo
 
 echo "--- Testing killswitch bringup when URFKILL is running: follow URfkill signals"
-echo "+++ stopping network-manager"
-service network-manager stop
 echo "+++ starting urfkill"
 service urfkill start
 sleep 15
 echo "+++ blocking device $fake_id"
 rfkill block $fake_id
 rfkill list
-sleep 5
-echo "+++ starting network-manager"
-service network-manager start
 
 echo "+++ Waiting for the devices to settle"
 sleep 30

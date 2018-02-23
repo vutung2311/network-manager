@@ -1,3 +1,9 @@
+network-manager (1.10.4-1ubuntu2) UNRELEASED; urgency=medium
+
+  * debian/tests/urfkill-integration - don't stop/start network manager
+
+ -- Bryan Quigley <bryan.quigley@canonical.com>  Fri, 23 Feb 2018 13:52:48 -0500
+
 network-manager (1.10.4-1ubuntu1) bionic; urgency=medium
 
   * Merge with Debian (LP: #1734586). Remaining changes:
