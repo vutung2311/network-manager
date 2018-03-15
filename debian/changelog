@@ -1,10 +1,10 @@
-network-manager (1.10.4-1ubuntu3) UNRELEASED; urgency=medium
+network-manager (1.10.4-1ubuntu3) bionic; urgency=medium
 
   * Cherry-pick a partial patch from 1.11 branch, to stop agressively
     setting route_only flag on nameservers in the systemd-resolved dns
     plugin. LP: #1751797
 
- -- Dimitri John Ledkov <xnox@ubuntu.com>  Thu, 15 Mar 2018 15:18:06 +0000
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Thu, 15 Mar 2018 15:24:01 +0000
 
 network-manager (1.10.4-1ubuntu2) bionic; urgency=medium
 
