@@ -39,6 +39,8 @@ network-manager (1.10.6-2ubuntu1) UNRELEASED; urgency=medium
       + e91f1a7d2a6b8400b6b331d5b72287dcb5164a39.patch
       + dns-manager-don-t-merge-split-DNS-search-domains.patch (but disabled)
     - debian/tests/urfkill-integration - don't stop/start network manager
+  * Dropped patches applied in new release:
+    - settings-preserve-agent-owned-secrets-on-connection-updat.patch
 
  -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 26 Mar 2018 08:34:34 -0400
 
