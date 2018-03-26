@@ -1,4 +1,4 @@
-From: =?UTF-8?q?St=C3=A9phane=20Graber?= <stephane.graber@canonical.com>
+From: =?utf-8?q?St=C3=A9phane_Graber?= <stephane.graber@canonical.com>
 Date: Thu, 12 May 2016 22:44:06 +0800
 Subject: Update dnsmasq parameters
 
@@ -7,11 +7,11 @@ Disable caching since it's a potential security issue (local dns cache poisoning
 See also: https://blueprints.launchpad.net/ubuntu/+spec/foundations-p-dns-resolving
 ---
  src/dns/nm-dns-dnsmasq.c | 4 ++--
- src/dns/nm-dns-manager.c | 8 ++++----
- 2 files changed, 6 insertions(+), 6 deletions(-)
+ src/dns/nm-dns-manager.c | 6 +++---
+ 2 files changed, 5 insertions(+), 5 deletions(-)
 
 diff --git a/src/dns/nm-dns-dnsmasq.c b/src/dns/nm-dns-dnsmasq.c
-index 3ec1fd2d..9309c0ec 100644
+index e6436c7..09a968c 100644
 --- a/src/dns/nm-dns-dnsmasq.c
 +++ b/src/dns/nm-dns-dnsmasq.c
 @@ -504,8 +504,8 @@ start_dnsmasq (NMDnsDnsmasq *self)
@@ -26,10 +26,10 @@ index 3ec1fd2d..9309c0ec 100644
  	argv[idx++] = "--conf-file=/dev/null"; /* avoid loading /etc/dnsmasq.conf */
  	argv[idx++] = "--proxy-dnssec"; /* Allow DNSSEC to pass through */
 diff --git a/src/dns/nm-dns-manager.c b/src/dns/nm-dns-manager.c
-index 754fb80f..3dbf2f7e 100644
+index dc54547..b3ded33 100644
 --- a/src/dns/nm-dns-manager.c
 +++ b/src/dns/nm-dns-manager.c
-@@ -1164,12 +1164,12 @@ update_dns (NMDnsManager *self,
+@@ -1082,12 +1082,12 @@ update_dns (NMDnsManager *self,
  		;
  	}
  
@@ -44,15 +44,12 @@ index 754fb80f..3dbf2f7e 100644
  
  		if (NM_IS_DNS_SYSTEMD_RESOLVED (priv->plugin)) {
  			/* systemd-resolved uses a different link-local address */
-@@ -1558,7 +1558,7 @@ nm_dns_manager_stop (NMDnsManager *self)
+@@ -1448,7 +1448,7 @@ nm_dns_manager_stop (NMDnsManager *self)
  	_LOGT ("stopping...");
  
  	/* If we're quitting, leave a valid resolv.conf in place, not one
--	 * pointing to 127.0.0.1 if any plugins were active.  Thus update
-+	 * pointing to 127.0.1.1 if any plugins were active.  Thus update
- 	 * DNS after disposing of all plugins.  But if we haven't done any
- 	 * DNS updates yet, there's no reason to touch resolv.conf on shutdown.
+-	 * pointing to 127.0.0.1 if dnsmasq was active.  But if we haven't
++	 * pointing to 127.0.1.1 if dnsmasq was active.  But if we haven't
+ 	 * done any DNS updates yet, there's no reason to touch resolv.conf
+ 	 * on shutdown.
  	 */
--- 
-2.14.1
-
