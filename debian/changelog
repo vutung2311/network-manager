@@ -1,4 +1,4 @@
-network-manager (1.10.6-2ubuntu1) UNRELEASED; urgency=medium
+network-manager (1.10.6-2ubuntu1) bionic; urgency=medium
 
   * Merge with Debian (LP: #1758331). Remaining changes:
     - Use systemd-resolved instead of dnsmasq
@@ -42,7 +42,7 @@ network-manager (1.10.6-2ubuntu1) UNRELEASED; urgency=medium
   * Dropped patches applied in new release:
     - settings-preserve-agent-owned-secrets-on-connection-updat.patch
 
- -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 26 Mar 2018 08:34:34 -0400
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 26 Mar 2018 09:21:12 -0400
 
 network-manager (1.10.6-2) unstable; urgency=medium
 
