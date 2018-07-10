@@ -1,3 +1,11 @@
+network-manager (1.10.6-2ubuntu1.1) UNRELEASED; urgency=medium
+
+  * debian/10-globally-managed-devices.conf: adjust exception for wwan to
+    specify cdma and gsm, since those are the actual types handled by NM/MM.
+    (LP: #1780606)
+
+ -- Mathieu Trudel-Lapierre <cyphermox@ubuntu.com>  Tue, 10 Jul 2018 08:13:52 -0400
+
 network-manager (1.10.6-2ubuntu1) bionic; urgency=medium
 
   * Merge with Debian (LP: #1758331). Remaining changes:
