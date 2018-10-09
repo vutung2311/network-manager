@@ -1,0 +1,11 @@
+.pc/
+.idea/
+*.o
+*.a
+*.log
+*.lo
+*.la
+*.deps
+.cproject
+.project
+.settings/
